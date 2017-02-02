@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="IncomeApp">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+
+	<!-- jQuery 2x -->
+	<script src="./bower_components/jquery/dist/jquery.js"></script>
+	<script src="./bower_components/angular/angular.min.js"></script>
+	<script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="style.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+
+<body>
+	<!-- main container -->
+	<div class="container">
+		<!-- <div ng-include="'/form.tpl.html'"></div> -->
+		<section class="card intro-card">
+			<div class="text-center jumbotron">
+				<h1>Ingresa tu Salario</h1>
+				<p>Para obtener tus resultados</p>
+			</div><!-- ./ jumbotron -->
+		</section><!-- ./ intro-card -->
+	
+		<!-- form template -->
+		<ui-view></ui-view>
+	</div><!-- ./ container -->
+
+
+	<!-- <script src="./bower_components/angular-route/angular-route.min.js"></script> -->
+	<script src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	
+
+	<!-- config -->
+	<script src="./config/app.modules.js"></script>
+	<script src="./config/app.config.js"></script>
+	<!-- Modules -->
+	<script src="./views/views.module.js"></script>
+	<script src="./shared/shared.module.js"></script>
+	<!-- Controllers -->
+	<script src="./shared/rates.fac.js"></script>
+	<script src="./views/form.ctr.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+fieldset {
+	border-radius: 3px;
+	padding: 8px;
+	margin-top: 50px;
+}
+.error-touched,
+.list-group-item {
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+ul > li { list-style-type: none; }
+.query-card { margin-bottom: 15px; }
+
+.query-card .error-touched {
+	margin: 5px;
+	font-style: italic;
+}
+
+.list-group > .list-group-item { font-size: 15px; }
+
+.list-group 
+.list-group-item > .add-space { margin-left: 35px; }
+.list-group .list-group-item > .price {
+	font-size: 17px;
+	padding: 0 15px 0 15px;
+}

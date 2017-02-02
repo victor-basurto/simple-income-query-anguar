@@ -1,0 +1,18 @@
+{
+  "name": "IncomeQuery",
+  "version": "1.0.0",
+  "description": "get income",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Basurto",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "~1.14.1",
+    "bower": "~1.7.9",
+    "express": "~4.13.2",
+    "method-override": "~2.3.5",
+    "morgan": "~1.7.0"
+  }
+}
